@@ -1,0 +1,18 @@
+{
+  "name": "かた！スパーン！",
+  "version": "1",
+  "manifest_version": 2,
+  "description": "Web上で長文を入力するときに、楽しくします。",
+  "web_accessible_resources": [
+    "*.png"
+  ],
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": [
+      "js/jquery-3.4.1.min.js",
+      "js/caretposition.js",
+      "js/event.js"
+    ]
+  }]
+}
+
